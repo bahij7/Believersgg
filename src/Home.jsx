@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 
 function Home() {
 useEffect(()=>{
-    document.title ='Believers - Home'
+    document.title ='Believersgg - Home'
 }, [])
   return (
     <div>
