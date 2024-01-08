@@ -1,4 +1,7 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
+import { faSun } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   return (
@@ -9,9 +12,11 @@ function Navbar() {
 
             <div className="others">
 
-                <div className="mode">Mode</div>
+                <div className="mode">
+                <i><FontAwesomeIcon icon={faSun} /></i>
+                </div>
                 <div className="links">
-                <p>Menu</p>
+                    <i><FontAwesomeIcon icon={faBarsStaggered} /></i>
                 </div>
 
             </div>
