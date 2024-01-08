@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import { faSun } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +9,7 @@ function Navbar() {
 
     <div className="navbar-container">
         <div className="navbar">
-            <div className="logo">Be</div>
+            <div className="logo"><Link to="/">Be</Link></div>
 
             <div className="others">
 
