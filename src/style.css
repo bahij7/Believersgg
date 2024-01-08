@@ -155,14 +155,33 @@ body {
   font-style: italic;
 }
 
-.intro a{
+.intro a, .second a{
   text-decoration: underline;
   color: #E3E3E3;
   font-size: 14px;
 }
 
-.intro .arrow{
+.intro .arrow, .second .arrow{
   transform: rotate(45deg);
   position: relative;
   top: 2px;
+}
+
+.second a{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.second{
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0px;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+iframe{
+  width: 100%;
+  min-height: 300px;
+  border-radius: 10px;
 }
