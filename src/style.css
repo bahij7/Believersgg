@@ -49,7 +49,7 @@ body {
 }
 
 .links{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
@@ -63,6 +63,7 @@ body {
 
 .links i{
   color: white;
+  cursor: pointer;
 }
 
 .mode{
@@ -79,5 +80,9 @@ body {
 
 .mode i{
   color: white;
+  cursor: pointer;
 }
 
+.mode:active, .links:active{
+  background: #111111;
+}
