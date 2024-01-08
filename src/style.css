@@ -17,8 +17,10 @@ body {
   height: 15vh;
   background: #121212b8;
   backdrop-filter: blur(4px);
+  z-index: 1001;
   border-bottom: 1px solid #ffffff1a;
 }
+
 .navbar{
   width: 90%;
   margin: 0 auto;
@@ -94,7 +96,7 @@ body {
 
 .links{
   position: absolute;
-  z-index: 1001;
+  z-index: 1002;
   top: 10px;
   right: 20px;
   display: flex;
@@ -108,7 +110,7 @@ body {
   box-sizing: border-box;
   padding: 8px 18px 20px 30px;
   border-radius: 20px;
-  box-shadow: 0px 0px 50px black;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .links a{
@@ -116,6 +118,7 @@ body {
   font-size: 20px;
   color: #E3E3E3;
   transition: .4s ease all;
+  letter-spacing: -1px;
 }
 .links a:hover{
   transform: translateX(8px);
@@ -135,11 +138,10 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1001;
+  z-index: 1000;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -172,6 +174,7 @@ body {
 
 .intro .arrow, .second .arrow{
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 .second a{
