@@ -110,7 +110,7 @@ body {
   box-sizing: border-box;
   padding: 8px 18px 20px 30px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
 }
 
 .links a{
@@ -175,6 +175,8 @@ body {
 .intro .arrow, .second .arrow{
   transform: rotate(45deg);
   z-index: 1;
+  position: relative;
+  top: 2px;
 }
 
 .second a{
