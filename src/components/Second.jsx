@@ -6,8 +6,8 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 function Second() {
   return (
     <div className='second'> 
-        <iframe src="https://www.youtube.com/embed/Mr9T-943BnE" title="Nature Sounds: Rain Sounds One Hour for Sleeping, Sleep Aid for Everybody" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <Link to='/'>Take a look into our squad <FontAwesomeIcon icon={faArrowUp} className='arrow' /></Link>
+      <iframe width="670" height="377" src="https://www.youtube.com/embed/Kf_YuFrHDTs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <Link to='/Team'>Take a look into our squad <FontAwesomeIcon icon={faArrowUp} className='arrow' /></Link>
     </div>
   )
 }
