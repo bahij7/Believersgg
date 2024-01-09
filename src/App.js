@@ -1,6 +1,7 @@
 import React from 'react'
 import Home from './Home'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Team from './components/Team';
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
   <Router>
         <Routes>
           <Route element={<Home/>} path='/' exact/>
-          {/* <Route element={<Team/>} path='/Team'/>
-          <Route element={<About/>} path='/About'/>
-          <Route element={<Contact/>} path='/Contact'/> */}
+          <Route element={<Team/>} path='/Team'/>
         </Routes>
       </Router>
     </>

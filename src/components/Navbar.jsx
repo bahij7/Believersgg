@@ -50,7 +50,7 @@ function Navbar() {
     <div className="bg"></div>
   <div className="links">
     <i onClick={closeMenu}><FontAwesomeIcon icon={faXmark} /></i>
-      <Link to="/">Team</Link>
+      <Link to="/Team">Team</Link>
       <Link to="/">Palmeiras</Link>
       <Link to="/">About us</Link>
       <Link to="/">Contact</Link>
