@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 function Team() {
   return (
-    <div>Team</div>
+    <div>
+        <Navbar/>
+        Team
+    </div>
   )
 }
 
