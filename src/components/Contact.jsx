@@ -86,7 +86,7 @@ function Contact() {
             <div className="input-container">
               <span>OBJECT</span>
               <select required name="object" value={data.object} onChange={handleChange}>
-              <option selected disabled>Select the object</option>
+              <option disabled>Select the object</option>
                 <option value={'Collab'}>Collab</option>
                 <option value={'Invitation'}>Special invitation</option>
                 <option value={'Others'}>Others</option>
