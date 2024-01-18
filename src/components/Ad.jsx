@@ -4,7 +4,6 @@ function Ad() {
   return (
     <div className='ad'>
         Free Palestine 🇵🇸🍉
-
     </div>
   )
 }
