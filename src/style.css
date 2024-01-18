@@ -302,17 +302,34 @@ button[type="submit"] {
   background: #00753B;
 }
 
+.quotes{
+  border-bottom: 1px solid #ffffff1a;
+}
 .quote{
   width: 90%;
   margin: 0 auto;
   background: #121212;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid #ffffff1a;
   box-sizing: border-box;
   padding: 20px 20px;
   margin-top: 6%;
   margin-bottom: 6%;
 }
+
+.quotes-head{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.quotes-head span{
+  font-family: 'Playfair display';
+  font-style: italic;
+}
+.quotes-head h2{
+font-weight: 500;
+}
+
 
 
 
@@ -329,4 +346,16 @@ button[type="submit"] {
 
 .quote-info .role{
  font-size: 10px;
+}
+
+.quote-btn{
+  width: 90% !important;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.quote-btn button{
+  text-decoration: underline;
+  margin-top: -6% ;
+  cursor: pointer;
 }
