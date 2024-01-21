@@ -359,3 +359,152 @@ font-weight: 500;
   margin-top: -6% ;
   cursor: pointer;
 }
+
+.AboutSnippet{
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ffffff1a;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 0px;
+}
+
+.first-snipp{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.first-snipp .first{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: #121212;
+}
+
+.first-snipp .second{
+  width: 20%;
+  background: #E3E3E3;
+  color: #0C0C0C;
+  font-weight: 600;
+  border: 1px solid #ffffff1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+.second-snipp{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #121212;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+.third-snipp{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.third-snipp a{
+  color: #E3E3E3;
+}
+
+.third-snipp .arrow{
+  transform: rotate(45deg);
+  z-index: 1;
+  position: relative;
+  top: 2px;
+}
+
+.third-snipp .first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  background: #00753B;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.third-snipp .second{
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.third-snipp .second span{
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  font-size: 14px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff1a;
+  padding: 20px 0px;
+}
+
+.footer-right .footer-bottom{
+  text-transform: uppercase;
+}
+
+.footer-bottom a{
+  text-decoration: none;
+  color: #E3E3E3;
+}
+
+.footer-top{
+  opacity: 80%;
+}
+
+.footer-right{
+  text-align: right;
+}
+
+.footer-foot{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}

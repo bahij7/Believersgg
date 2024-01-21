@@ -4,6 +4,8 @@ import Intro from './components/Intro'
 import Second from './components/Second'
 import Quotes from './components/Quotes'
 import Ad from './components/Ad'
+import Footer from './components/Footer'
+import AboutSnippet from './components/AboutSnippet'
 
 function Home() {
 useEffect(()=>{
@@ -15,7 +17,9 @@ useEffect(()=>{
         <Navbar/>
         <Intro/>
         <Second/>
+        <AboutSnippet/>
         <Quotes/>
+        <Footer/>
     </div>
   )
 }
