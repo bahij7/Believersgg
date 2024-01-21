@@ -15,7 +15,7 @@ function AboutSnippet() {
       <div className="second-snipp">Believers, formerly known as the Lords.</div>
 
       <div className="third-snipp">
-        <div className="first"><Link to='/Team'>Know More About us<i><FontAwesomeIcon icon={faArrowUp} className='arrow' /></i></Link></div>
+        <div className="first"><Link to='/About'>Know More About us<i><FontAwesomeIcon icon={faArrowUp} className='arrow' /></i></Link></div>
         <div className="second">⭐⭐⭐⭐</div>
       </div>
     </div>
