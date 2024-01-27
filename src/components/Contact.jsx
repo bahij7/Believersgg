@@ -41,6 +41,7 @@ function Contact() {
 
   return (
     <div> 
+      <div className="no"><p>Switch to Mobile or Tablet Screen</p></div>
       <Navbar />
 
       <div className="contact-container">

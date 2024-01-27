@@ -8,6 +8,7 @@ function Palmeiras() {
     }, [])
   return (
     <div>
+      <div className="no"><p>Switch to Mobile or Tablet Screen</p></div>
         <Navbar/>
         Palmeiras
     </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect }from 'react'
 import Home from './Home'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Team from './components/Team';
@@ -6,10 +6,12 @@ import Contact from './components/Contact'
 import Palmeiras from './components/Palmeiras';
 import About from './components/About';
 
+
 function App() {
+
   return (
     <>
-  
+
   <Router>
         <Routes>
           <Route element={<Home/>} path='/' exact/>

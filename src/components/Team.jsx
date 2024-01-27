@@ -59,7 +59,7 @@ const [open, setOpen] = useState(false);
   }
   return (
     <div>
-
+<div className="no"><p>Switch to Mobile or Tablet Screen</p></div>
         <Navbar/>
         <div className="team-head">
           <img src={myImage} alt="colorsPalette" />

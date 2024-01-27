@@ -12,6 +12,7 @@ function Abouts() {
   })
   return (
     <div>
+      <div className="no"><p>Switch to Mobile or Tablet Screen</p></div>
       <Navbar/>
       <div className="about">
       <div className="about-head">

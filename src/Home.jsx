@@ -9,10 +9,11 @@ import AboutSnippet from './components/AboutSnippet'
 
 function Home() {
 useEffect(()=>{
-    document.title ='Believersgg - Home'
+    document.title = 'Believersgg - Home'
 }, [])
   return (
     <div>
+      <div className="no"><p>Switch to Mobile or Tablet Screen</p></div>
         <Ad/>
         <Navbar/>
         <Intro/>
