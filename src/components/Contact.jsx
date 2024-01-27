@@ -36,6 +36,7 @@ function Contact() {
 
   useEffect(() => {
     document.title = 'Believersgg - Contact';
+    window.scrollTo(0, 0);
   }, []);
 
   return (

@@ -6,7 +6,7 @@ import { faBarsStaggered, faSun, faXmark } from '@fortawesome/free-solid-svg-ico
 function Navbar() {
 
   const [isMenuOpen, setMenuOpen] = useState(false)
-
+  
   const toggleMenu = ()=>{
     setMenuOpen(!isMenuOpen)
   }
@@ -29,15 +29,15 @@ function Navbar() {
 
   return (
 
-    <div className="navbar-container">
+    <div className='navbar-container'>
         <div className="navbar">
-            <div className="logo"><Link to="/">Be</Link></div>
+            <div className='logo'><Link to="/">Be</Link></div>
 
             <div className="others">
 
-                <div className="mode">
+                {/* <div className='mode'>
                 <i><FontAwesomeIcon icon={faSun} /></i>
-                </div>
+                </div> */}
                 <div className="menu" onClick={toggleMenu}>
                     <i><FontAwesomeIcon icon={faBarsStaggered} /></i>
                 </div>
@@ -48,7 +48,7 @@ function Navbar() {
 {isMenuOpen && (
   <>
     <div className="bg"></div>
-  <div className="links">
+  <div className='links'>
     <i onClick={closeMenu}><FontAwesomeIcon icon={faXmark} /></i>
       <Link to="/Team">Team</Link>
       <Link to="/Palmeiras">Palmeiras</Link>

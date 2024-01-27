@@ -3,7 +3,8 @@ import Navbar from './Navbar'
 
 function Palmeiras() {
     useEffect(()=>{
-document.title = 'Believersgg - Palmeiras'
+      document.title = 'Believersgg - Palmeiras';
+      window.scrollTo(0, 0);
     }, [])
   return (
     <div>
