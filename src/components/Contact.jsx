@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function Contact() {
   const [data, setData] = useState({
@@ -17,10 +19,25 @@ function Contact() {
     });
   };
 
+  const [messageSent, setMessageSent] = useState(false);
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setData({
+
+    emailjs.sendForm('service_rux111u', 'template_778gz83', form.current, 'DDsHvjBfRXdfz4inJ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      setMessageSent(true)
+
+      setTimeout(()=>{
+        setMessageSent(false);
+      }, 5000)
+
+      setData({
         name:'',
         email: '',
         phoneNumber: '',
@@ -28,16 +45,15 @@ function Contact() {
         message: ''
     })
 
-
-
-
-    
+  
   };
 
   useEffect(() => {
     document.title = 'Believersgg - Contact';
     window.scrollTo(0, 0);
   }, []);
+
+
 
   return (
     <div> 
@@ -47,8 +63,10 @@ function Contact() {
       <div className="contact-container">
         <h1>Let’s talk 👋</h1>
         <p>Fill this form carefully please.</p>
+        {messageSent && <div className='message'><p>Sent Successfully ✅</p></div>}
         <div className="contact">
-          <form method="POST" onSubmit={handleSubmit}>
+
+          <form ref={form} method="POST" onSubmit={sendEmail}>
             <div className="input-container">
               <span>FULL NAME</span>
               <input
@@ -70,7 +88,7 @@ function Contact() {
                 id="email"
                 value={data.email}
                 onChange={handleChange}
-                placeholder="ahmedbahij0@gmail.com*"
+                placeholder="ahmedbahij@gmail.com*"
                 required
               />
             </div>
@@ -109,8 +127,9 @@ function Contact() {
             <button type="submit">Send</button>
             <button type="reset">Delete</button>
           </form>
-        </div>
+          </div>
       </div>
+      <Footer/>
     </div>
   );
 }

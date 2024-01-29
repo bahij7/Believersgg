@@ -1,9 +1,9 @@
-import React, { useState, useEffect }from 'react'
+import React from 'react'
 import Home from './Home'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Team from './components/Team';
 import Contact from './components/Contact'
-import Palmeiras from './components/Palmeiras';
+import News from './components/News';
 import About from './components/About';
 
 
@@ -17,7 +17,7 @@ function App() {
           <Route element={<Home/>} path='/' exact/>
           <Route element={<Team/>} path='/Team'/>
           <Route element={<Contact/>} path='/Contact'/>
-          <Route element={<Palmeiras/>} path='/Palmeiras'/>
+          <Route element={<News/>} path='/News'/>
           <Route element={<About/>} path='/About'/>
         </Routes>
       </Router>

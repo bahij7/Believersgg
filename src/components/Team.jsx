@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 import Navbar from './Navbar'
 import myImage from '../1.png'
 import MagoImg from '../images/mago.png'
@@ -8,13 +8,16 @@ import BrozxImg from '../images/brozx.jpg'
 import asImg from '../images/as.jpg'
 import DekuImg from '../images/xokago.png'
 import WendyImg from '../images/wendy.jpg'
+import AristoImg from '../images/aristo.jpg'
+import SalimImg from '../images/Salim (1).jpg'
+import RayanImg from '../images/Rayan.jpg'
 import Player from './Player'
 import Footer from './Footer';
 
 let Players = [{name: 'Ahmed Bahij - Support', aka: 'MAGO', img: MagoImg, age : 1},
-    {name: 'Anas Bouzriguen - Push', aka: 'AS', img: asImg, age : 4},
+    {name: 'Anas Bouzriguen - Push', aka: 'AS', img: asImg, age : 3},
     {name: 'Ilyass Lahbib - Cover', aka: 'BROZX', img: BrozxImg, age : 2},
-    {name: 'Ouail Beqqada - Push', aka: 'DEKU', img: DekuImg, age : 3},
+    {name: 'Ouail Beqqada - Push', aka: 'DEKU', img: DekuImg, age : 4},
 ]
 
 let Staff = [
@@ -24,10 +27,9 @@ let Staff = [
 ]
 
 let HonoredPlayers = [
-  {name: 'Anass Nthamout - Ex-Push', aka: 'TXIICO', img: MagoImg},
-  {name: 'Marouane Chouker - Ex-Push', aka: 'ARISTO', img: MagoImg},
-  {name: 'Salim Gharib - Ex-Push', aka: 'GENIUS', img: MagoImg},
-  {name: 'Rayan - Ex-Cover', aka: 'RAYAN', img: MagoImg},
+  {name: 'Marouane Chouker - Ex-Push', aka: 'ARISTO', img: AristoImg},
+  {name: 'Salim Gharib - Ex-Push', aka: 'GENIUS', img: SalimImg},
+  {name: 'Rayan ElHassouni - Ex-Cover', aka: 'RAYAN', img: RayanImg},
 ]
 
 function Team() {
@@ -36,7 +38,7 @@ const [selectedFilter, setSelectedFilter] = useState('all');
 const [open, setOpen] = useState(false);
 
   useEffect(()=>{
-      document.title = 'Believersgg - Meet Our Team'
+      document.title = 'Believersgg - Team'
       window.scrollTo(0, 0);
   },[])
 
@@ -47,10 +49,11 @@ const [open, setOpen] = useState(false);
   const filteredPlayers = () => {
     if (selectedFilter === 'all') {
       return Players;
-    } else if (selectedFilter === 'oldest') {
 
+    } else if (selectedFilter === 'oldest') {
       return [...Players].sort((a, b) => a.age - b.age);
     }
+
     return Players;
   };
 
@@ -65,7 +68,12 @@ const [open, setOpen] = useState(false);
           <img src={myImage} alt="colorsPalette" />
           <h1>Introducing <span>Believers' </span>squad</h1>
         </div>
+        <div className="team-topic">
+          <p>Our Lineup: Working together, making great things happen 😎🤝🏻</p>
+        </div>
+        
         <div className="team-stats">
+          
             <div className="team-left">
                 <p>Players</p>
             </div>
@@ -87,6 +95,11 @@ const [open, setOpen] = useState(false);
         ))}
         </div>
 
+        <div className="staff">
+        <div className="team-topic">
+          <p>Our Staff: Collaborating for remarkable achievements 📆👨🏼‍💻</p>
+        </div>
+      
         <div className="team-stats">
             <div className="team-left">
                 <p>Staff</p>
@@ -97,15 +110,16 @@ const [open, setOpen] = useState(false);
                 {Staff.map((staff)=>(<Player aka={staff.aka} name={staff.name} img={staff.img}/>))}
             </div>
             
-            <button className='honored-btn' onClick={handleClick}>{open ? 'Close' : 'See Our Honored ICONS'}</button>
+            <button className='honored-btn' onClick={handleClick}>{open ? <FontAwesomeIcon icon={faX} /> : 'See Our Honored ICONS'}</button>
 
         <div className="honored-players">
           <div className="team-players honored-players">
+          {open &&  <p className='thanks-sentence'>*Big thanks to these awesome players! They've not only rocked the game with their skills but also brought so much joy. We're really grateful for the happiness they've given us. ❤</p>}
           {open && HonoredPlayers.map((player)=>(<Player name={player.name} aka={player.aka} img={player.img} />))}
-          {open &&  <p>*Big thanks to these awesome players! They've not only rocked the game with their skills but also brought so much joy. We're really grateful for the happiness they've given us.</p>}
          </div>
-        
         </div>
+        </div>
+
             <Footer/>
     </div>
   )

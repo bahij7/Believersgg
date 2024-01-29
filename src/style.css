@@ -39,7 +39,7 @@ body{
   left: 0;
   width: 100%;
   height: 15vh;
-  background: #121212b8;
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   z-index: 1001;
   border-bottom: 1px solid #ffffff1a;
@@ -227,10 +227,11 @@ body{
   border-bottom: 1px solid #ffffff1a;
 }
 
-iframe{
+video{
   width: 100%;
   min-height: 300px;
   border-radius: 10px;
+  border: 1px solid #ffffff1a;
 }
 
 .contact-container{
@@ -316,6 +317,18 @@ button{
 button[type="submit"] {
   background: #00753B;
 }
+
+.message{
+  position: fixed;
+  z-index: 2000;
+  top: 20vh;
+  backdrop-filter: blur(8px);
+  padding: 5px 20px;
+  border-radius: 8px;
+  right: 0;
+  text-align: center;
+}
+
 
 .popup-message{
   z-index: 1000;
@@ -463,6 +476,11 @@ font-weight: 500;
   font-style: italic;
 }
 
+.team-topic{
+  width: 90%;
+  margin: 0 auto;
+}
+
 .team-stats{
   width: 90%;
   margin: 0 auto;
@@ -525,11 +543,20 @@ font-weight: 500;
   font-weight: 300;
 }
 
+.staff{
+  width: 100%;
+  border-bottom: 1px solid #ffffff1a;
+}
+
 .honored-players{
   margin-top: -2%;
 }
 
-.honored-players p:last-child{
+.honored-players .player-card:last-child{
+  margin-bottom: 4%;
+}
+
+.honored-players .thanks-sentence{
   font-size: 12px;
 }
 
@@ -541,14 +568,18 @@ font-weight: 500;
 }
 
 .about{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid #ffffff1a;
+
 }
 
 .about-head{
+  width: 90%;
+  margin: 0 auto;
   box-sizing: border-box;
   padding: 30px 0px 0px 0px;
-  width: 100%;
+
   border-bottom: 1px solid #ffffff1a;
 }
 
@@ -566,6 +597,8 @@ font-weight: 500;
 }
 
 .about-body{
+  width: 90%;
+  margin: 0 auto;
   margin-top: 2%;
 }
 
@@ -579,10 +612,57 @@ font-weight: 500;
   border: 1px solid #ffffff1a;
 }
 
+.news{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-
-.footer{
+.new-head{
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffffff1a;
+  padding: 8px 10px;
+}
+
+.new-head img{
+  width: 40px;
+}
+
+.new-card{
+  box-sizing: border-box;
+  background: #121212;
+  width: 100%;
+  height: fit-content;
+  border-radius: 8px;
+  border: 1px solid #ffffff1a;
+}
+
+.new-body{
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.new-foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  font-size: 10px;
+}
+
+.new-link a{
+  font-size: 12px;
+  color: #E3E3E3;
+  text-decoration: underline;
+}
+.footer{
+  font-size: 12px;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -612,7 +692,7 @@ font-weight: 500;
 .footer-foot{
   width: 90%;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;

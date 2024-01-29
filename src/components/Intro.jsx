@@ -11,7 +11,7 @@ function Intro() {
     <div className='intro'>
         <img src={myImage} alt="colorsPalette" />
         <h1>Because if we <span>Believe,</span> we <span>achieve.</span></h1>
-        <Link to='/Palmeiras'>Check our Palmeiras <i><FontAwesomeIcon icon={faArrowUp} className='arrow' /></i></Link>
+        <Link to='/News'>Check our latest News <i><FontAwesomeIcon icon={faArrowUp} className='arrow' /></i></Link>
     </div>
   )
 }

@@ -9,7 +9,8 @@ import AboutSnippet from './components/AboutSnippet'
 
 function Home() {
 useEffect(()=>{
-    document.title = 'Believersgg - Home'
+    document.title = 'Believers - a Moroccan esport team'
+    window.scrollTo(0, 0);
 }, [])
   return (
     <div>
