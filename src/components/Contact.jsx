@@ -62,7 +62,7 @@ function Contact() {
 
       <div className="contact-container">
         <h1>Let’s talk 👋</h1>
-        <p>Fill this form carefully please.</p>
+        <p>Please fill out this form carefully.</p>
         {messageSent && <div className='message'><p>Sent Successfully ✅</p></div>}
         <div className="contact">
 
