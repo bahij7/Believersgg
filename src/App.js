@@ -5,6 +5,9 @@ import Team from './components/Team';
 import Contact from './components/Contact'
 import News from './components/News';
 import About from './components/About';
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 
 function App() {
