@@ -81,8 +81,8 @@ const [open, setOpen] = useState(false);
             <div className="team-right">
 
             <select id="mySelect" name="mySelect"  onChange={handleFilterChange} value={selectedFilter}>
-                <option disabled>Filter</option>
-                <option value="all">All</option>
+                <option disabled>Sort</option>
+                <option value="all">Default</option>
                 <option value="oldest">by Oldest</option>
             </select>
             
