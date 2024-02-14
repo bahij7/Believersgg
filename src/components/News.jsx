@@ -14,6 +14,11 @@ function News() {
                 {type : 'Achievements',
                 topic :`We're thrilled to announce the launch of our website! 🌐 Explore it now. Exciting times ahead! #NewBeginnings #WebsiteLaunch`,
                 date: "1 Feb 2024" },
+
+                {type : 'Communication',
+                topic :`اللهم إني أستودعك بيت المقدس وأهل القدس وكل فلسطين. اللهم ارزق أهل فلسطين الثبات والنصر والتمكين، وبارك في إيمانهم وصبرهم. اللهم إنا نسألك باسمك القّهار أنْ تقهر من قهر إخواننا في فلسطين، ونسألك أن تنصرهم على القوم المجرمين.                `,
+                date: "14 Feb 2024" },
+                
               ]
   const newNews = News.reverse();
 
