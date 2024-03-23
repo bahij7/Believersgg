@@ -7,7 +7,7 @@ import MagoImg from '../images/mago.png'
 import BrozxImg from '../images/brozx.jpg'
 import asImg from '../images/as.jpg'
 import DekuImg from '../images/xokago.png'
-import WendyImg from '../images/wendy.jpg'
+import arbiImg from '../images/aymane (1).jpg'
 import AristoImg from '../images/aristo.jpg'
 import SalimImg from '../images/Salim (1).jpg'
 import RayanImg from '../images/Rayan.jpg'
@@ -15,21 +15,21 @@ import Player from './Player'
 import Footer from './Footer';
 
 let Players = [{name: 'Ahmed Bahij - Support', aka: 'MAGO', img: MagoImg, age : 1},
-    {name: 'Anas Bouzriguen - Push', aka: 'AS', img: asImg, age : 3},
     {name: 'Ilyass Lahbib - Cover', aka: 'BROZX', img: BrozxImg, age : 2},
-    {name: 'Ouail Beqqada - Push', aka: 'DEKU', img: DekuImg, age : 4},
+    {name: 'Ouail Beqqada - Push', aka: 'DEKU', img: DekuImg, age : 3},
+    {name: 'Aymane - Push', aka: 'L3ARBI', img: arbiImg, age : 4},
+    {name: 'Yassine - Push', aka: 'FURY', img: '', age : 5},
 ]
 
 let Staff = [
-    {name: 'Saliha Saidi - Manager', aka: 'WENDY', img: WendyImg},
     {name: 'Ahmed Bahij - Captain, Coach, Analyst', aka: 'MAGO', img: MagoImg},
-    {name: 'Anas Bouzriguen - Captain, Coach', aka: 'AS', img: asImg},
 ]
 
 let HonoredPlayers = [
   {name: 'Marouane Chouker - Ex-Push', aka: 'ARISTO', img: AristoImg},
   {name: 'Salim Gharib - Ex-Push', aka: 'GENIUS', img: SalimImg},
   {name: 'Rayan ElHassouni - Ex-Cover', aka: 'RAYAN', img: RayanImg},
+  {name: 'Anas Bouzriguen - Captain, Coach', aka: 'AS', img: asImg},
 ]
 
 function Team() {
