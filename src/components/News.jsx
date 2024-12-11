@@ -22,6 +22,10 @@ function News() {
                 {type : 'Communication',
                 topic : 'مبارك عليكم هذا الشهر الكريم، ونسأل الله لكم فيه بالصحة والستر والعافية.',
                 date: "23 Mar 2024" },
+
+                {type : 'Communication',
+                  topic : 'Believers are BACK! 📢🔥',
+                  date: "10 Dec 2024" },
               ]
   const newNews = News.reverse();
 

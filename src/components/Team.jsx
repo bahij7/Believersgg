@@ -16,10 +16,9 @@ import Footer from './Footer';
 
 let Players = [{name: 'Ahmed Bahij - Support', aka: 'MAGO', img: MagoImg, age : 1},
     {name: 'Ilyass Lahbib - Cover', aka: 'BROZX', img: BrozxImg, age : 2},
-    {name: 'Ouail Beqqada - Push', aka: 'DEKU', img: DekuImg, age : 3},
     {name: 'Aymane - Push', aka: 'L3ARBI', img: arbiImg, age : 4},
-    {name: 'Yassine - Push', aka: 'FURY', img: '', age : 5},
-]
+    {name: 'Anas Bouzriguen - Captain, Coach', aka: 'AS', img: asImg},
+  ]
 
 let Staff = [
     {name: 'Ahmed Bahij - Captain, Coach, Analyst', aka: 'MAGO', img: MagoImg},
@@ -29,7 +28,7 @@ let HonoredPlayers = [
   {name: 'Marouane Chouker - Ex-Push', aka: 'ARISTO', img: AristoImg},
   {name: 'Salim Gharib - Ex-Push', aka: 'GENIUS', img: SalimImg},
   {name: 'Rayan ElHassouni - Ex-Cover', aka: 'RAYAN', img: RayanImg},
-  {name: 'Anas Bouzriguen - Captain, Coach', aka: 'AS', img: asImg},
+  {name: 'Ouail Beqqada - Push', aka: 'DEKU', img: DekuImg, age : 3},
 ]
 
 function Team() {
